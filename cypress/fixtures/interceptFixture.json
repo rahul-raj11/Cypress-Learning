@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Cypress Assertion Video",
+        "completed": false,
+        "id": "1"
+    },
+    {
+        "title": "Page Object Model Cypress Video",
+        "completed": false,
+        "id": "2"
+    },
+    {
+        "title": "Intercept Cypress Video",
+        "completed": false,
+        "id": "3"
+    }
+]

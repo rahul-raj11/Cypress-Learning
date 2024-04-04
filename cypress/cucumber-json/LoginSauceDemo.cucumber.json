@@ -1,0 +1,200 @@
+[
+  {
+    "description": "    Feature This feature is required for a user to log in.",
+    "keyword": "Feature",
+    "name": "Login feature",
+    "line": 1,
+    "id": "login-feature",
+    "tags": [],
+    "uri": "LoginSauceDemo.feature",
+    "elements": [
+      {
+        "id": "login-feature;success-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Success Login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens the login page",
+            "result": {
+              "status": "passed",
+              "duration": 11069000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "A user enter the username \"standard_user\"",
+            "result": {
+              "status": "passed",
+              "duration": 1428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "A user enter the password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 592000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "A user clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "A user is logged in and url contain \"/inventory.html\"",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;failed-login-using-locked-user",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Failed Login Using Locked User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens the login page",
+            "result": {
+              "status": "passed",
+              "duration": 780000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "A user enter the username \"locked_out_user\"",
+            "result": {
+              "status": "passed",
+              "duration": 512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "A user enter the password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "A user clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "A user gets error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;failed-login-using-incorrect-credential",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Failed Login Using Incorrect Credential",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens the login page",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "incorrect_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 23,
+            "name": "A user enter incorrect credetials",
+            "result": {
+              "status": "passed",
+              "duration": 985000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "A user clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "A user gets error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

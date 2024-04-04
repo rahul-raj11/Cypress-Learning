@@ -1,0 +1,36 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run:chrome": "cypress run --browser chrome --spec cypress/e2e/practice/pom/*.cy.js"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "Rahul Raj",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "eslint-plugin-cypress": "^2.15.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "typescript": "^5.4.3"
+  }
+}
